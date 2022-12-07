@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Catalog</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<!-- <link rel="stylesheet" href="css/style.min.css?_v=20221116221556"> -->
+	<link rel="stylesheet" href="css/style.css?_v=20221116221556">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+
+					<!-- BURGER BUTTON -->
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<!-- / BURGER BUTTON -->
+
+					<!-- HEADER MENU -->
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_mobile">
+								<a href="log-in.html" class="menu__link">LOG in</a>
+							</li>
+							<li class="menu__item">
+								<a href="catalog.html" class="menu__link">Cars</a>
+							</li>
+							<li class="menu__item">
+								<a href="about-us.html" class="menu__link">About us</a>
+							</li>
+							<li class="menu__item">
+								<a href="faq.html" class="menu__link">FAQ</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+
+						<div class="create-account">
+							<p>Dont have an account?</p>
+							<a href="sign-up.html">Sign up</a>
+						</div>
+					</nav>
+					<!-- / HEADER MENU -->
+
+					<!-- LOGO -->
+					<a href="/index.html" class="header__logo">
+						<img class="logo-pc" src="img/logo.svg" alt="logo">
+						<img class="logo-mobile" src="img/logo-mobile.svg" alt="logo">
+					</a>
+					<!-- / LOGO -->
+
+					<!-- HEADER BUTTONS -->
+					<div class="header__buttons buttons">
+						<a href="sign-up.html" class="buttons__button buttons__button_blue">register</a>
+						<a href="log-in.html" class="buttons__button buttons__button_white">LOG in</a>
+					</div>
+					<!-- / HEADER BUTTONS -->
+
+				</div>
+			</div>
+		</header>
+		<!-- / HEADER -->
+		<main class="page">
+
+			<!-- SECTION CATALOG -->
+			<section class="catalog">
+				<div class='catalog__container'>
+
+					<!-- Place for show selected opttions in the filter on PC -->
+					<div class="selected-options-pc"></div>
+					<!-- Place for show selected opttions in the filter on PC -->
+
+					<!-- price values, hide element -->
+					<div id="price-values"></div>
+					<!-- End of price values, hide element -->
+
+
+					<div class="catalog__row">
+
+						<!-- LEFT COLUMN -->
+						<div class="catalog__column catalog__column_left">
+							<div class="catalog__top">
+								<h1 class="button-filters">Filters</h1>
+								<div class="selected-options-mobile">
+									<!-- Place for show selected opttions in the filter on MOBILE -->
+								</div>
+								<button class="clear-all-link">Clear all filters</butt>
+							</div>
+
+							<!-- FILTERS -->
+							<div class="catalog-wrapper">
+								<div class="catalog__filters">
+									<!-- SEARCH -->
+									<form name="search-form" class="search-form" action="#" method="post">
+										<div class="search">
+											<input autocomplete="off" type="text" name="search" data-error="error" placeholder="Search" class="input search-input">
+											<button type="submit" class="button"><img src="img/icons/search.svg" alt="search"></button>
+										</div>
+									</form>
+									<!-- End of SEARCH -->
+
+									<!-- Spoilers: -->
+									<div data-spollers class="spollers">
+
+										<!-- MAKE -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Make</button>
+											<div class="spollers__body">
+												<div class="checkbox">
+													<input id="ford" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Ford" name="bodystyles">
+													<label for="ford" class="checkbox__label"><span class="checkbox__text">Ford</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="hundai" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Hundai" name="bodystyles">
+													<label for="hundai" class="checkbox__label"><span class="checkbox__text">Hundai</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="kia" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Kia" name="bodystyles">
+													<label for="kia" class="checkbox__label"><span class="checkbox__text">Kia</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="mitsubishi" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Mitsubishi" name="bodystyles">
+													<label for="mitsubishi" class="checkbox__label"><span class="checkbox__text">Mitsubishi</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="nissan" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Nissan" name="bodystyles">
+													<label for="nissan" class="checkbox__label"><span class="checkbox__text">Nissan</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="opel" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Opel" name="bodystyles">
+													<label for="opel" class="checkbox__label"><span class="checkbox__text">Opel</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="renaul" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Renaul" name="bodystyles">
+													<label for="renaul" class="checkbox__label"><span class="checkbox__text">Renaul</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="volkswagen" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Volkswagen" name="bodystyles">
+													<label for="volkswagen" class="checkbox__label"><span class="checkbox__text">Volkswagen</span></label>
+												</div>
+											</div>
+										</div>
+										<!-- End of MAKE -->
+
+										<!-- CAR BODYSTYLES -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">car
+												bodystyles</button>
+											<div class="spollers__body">
+												<div class="checkbox">
+													<input id="hatchback" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Hatchback" name="Hatchback">
+													<label for="hatchback" class="checkbox__label"><span class="checkbox__text">Hatchback</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="estate" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Estate" name="Estate">
+													<label for="estate" class="checkbox__label"><span class="checkbox__text">Estate</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="suv" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="SUV" name="SUV">
+													<label for="suv" class="checkbox__label"><span class="checkbox__text">SUV</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="saloon" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Saloon" name="Saloon">
+													<label for="saloon" class="checkbox__label"><span class="checkbox__text">Saloon</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="coupe" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Coupe" name="Coupe">
+													<label for="coupe" class="checkbox__label"><span class="checkbox__text">Coupe</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="pickUp" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Pick-up" name="Pick-up">
+													<label for="pickUp" class="checkbox__label"><span class="checkbox__text">Pick-up</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="peopleCarrier" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="People Carrier" name="People Carrier">
+													<label for="peopleCarrier" class="checkbox__label"><span class="checkbox__text">People
+															Carrier</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="convertible" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Convertible" name="Convertible">
+													<label for="convertible" class="checkbox__label"><span class="checkbox__text">Convertible</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="crossover4x4" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="4x4/crossover" name="4x4/crossover">
+													<label for="crossover4x4" class="checkbox__label"><span class="checkbox__text">4x4/crossover</span></label>
+												</div>
+											</div>
+										</div>
+										<!-- End of CAR BODYSTYLES -->
+
+										<!-- GEARBOX -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Gearbox</button>
+											<div class="spollers__body">
+												<div class="checkbox">
+													<input id="gearbox_manual" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Manual" name="Manual">
+													<label for="gearbox_manual" class="checkbox__label"><span class="checkbox__text">Manual</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="gearbox_automatic" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Automatic" name="Automatic">
+													<label for="gearbox_automatic" class="checkbox__label"><span class="checkbox__text">Automatic</span></label>
+												</div>
+											</div>
+										</div>
+										<!-- End of GEARBOX -->
+
+										<!-- ENGINE SIZE -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Engine Size</button>
+											<div class="spollers__body">
+												<div class="checkbox">
+													<input id="engine_1" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Under 1.0-litre " name="Under 1.0-litre">
+													<label for="engine_1" class="checkbox__label"><span class="checkbox__text">Under 1.0-litre</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="engine_1_2" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="1.0 to 2.0-litres" name="1.0 to 2.0-litres">
+													<label for="engine_1_2" class="checkbox__label"><span class="checkbox__text">1.0 to 2.0-litres</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="engine_2_3" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="2.0 to 3.0-litres" name="2.0 to 3.0-litres">
+													<label for="engine_2_3" class="checkbox__label"><span class="checkbox__text">2.0 to 3.0-litres</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="engine_3_plus" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="3.0-plus" name="3.0-plus">
+													<label for="engine_3_plus" class="checkbox__label"><span class="checkbox__text">3.0-plus</span></label>
+												</div>
+											</div>
+										</div>
+										<!-- End of ENGINE SIZE -->
+
+										<!-- FUEL TYPE -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Fuel type</button>
+											<div class="spollers__body">
+												<div class="checkbox">
+													<input id="petrol" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Petrol" name="Petrol">
+													<label for="petrol" class="checkbox__label"><span class="checkbox__text">Petrol</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="diesel" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Diesel" name="Diesel">
+													<label for="diesel" class="checkbox__label"><span class="checkbox__text">Diesel</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="bioDiesel" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Bio-diesel" name="Bio-diesel">
+													<label for="bioDiesel" class="checkbox__label"><span class="checkbox__text">Bio-diesel</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="CNG" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Compressed Natural Gas" name="Compressed Natural Gas">
+													<label for="CNG" class="checkbox__label"><span class="checkbox__text">Compressed Natural Gas</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="LPG" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Liquid Petroleum Gas" name="Liquid Petroleum Gas">
+													<label for="LPG" class="checkbox__label"><span class="checkbox__text">Liquid Petroleum Gas</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="ethanol" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="Ethanol" name="Ethanol">
+													<label for="ethanol" class="checkbox__label"><span class="checkbox__text">Ethanol</span></label>
+												</div>
+											</div>
+										</div>
+										<!-- End of FUEL TYPE -->
+
+										<!-- PRICE -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">Price</button>
+											<div class="spollers__body">
+
+												<div class="price">
+													<div class="price__range"></div>
+													<div class="price__wrapper">
+
+														<!-- value="0" set Start value for the unput, you can change this -->
+														<input id="price-start" autocomplete="off" type="number" name="price-from" value="0" class="price__input" />
+
+														<!-- value="160" set Start value for the unput, you can change this -->
+														<!-- set the aria-valuemax for other biggest price: -->
+														<input id="price-end" autocomplete="off" type="number" name="price-to" class="price__input" value="160" aria-valuemax="700" />
+
+													</div>
+												</div>
+
+												<div class="price-buttons">
+													<button type="submit" class="buttons__button buttons__button_white buttons__button_apply">Apply</button>
+													<button id="reset" type="clear" class="clear-link">Clear</button>
+												</div>
+
+											</div>
+										</div>
+										<!-- End of PRICE -->
+
+										<!-- SEATS -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Seats</button>
+											<div class="spollers__body">
+												<div class="checkbox">
+													<input id="seats_4" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="4 seats" name="4 seats">
+													<label for="seats_4" class="checkbox__label"><span class="checkbox__text">4 seats</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="seats_5" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="5 seats" name="4 seats">
+													<label for="seats_5" class="checkbox__label"><span class="checkbox__text">5 seats</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="seats_6" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="6 seats" name="6 seats">
+													<label for="seats_6" class="checkbox__label"><span class="checkbox__text">6 seats</span></label>
+												</div>
+											</div>
+										</div>
+										<!-- End of SEATS -->
+
+										<!-- YEAR -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Year</button>
+											<div class="spollers__body">
+												<div class="checkbox">
+													<input id="year_2020" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="2020" name="year_2020">
+													<label for="year_2020" class="checkbox__label"><span class="checkbox__text">2020</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="year_2021" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="2021" name="year_2021">
+													<label for="year_2021" class="checkbox__label"><span class="checkbox__text">2021</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="year_2022" data-error="Error" class="checkbox__input filter-element" type="checkbox" value="2022" name="year_2022">
+													<label for="year_2022" class="checkbox__label"><span class="checkbox__text">2022</span></label>
+												</div>
+											</div>
+										</div>
+										<!-- End of YEAR -->
+
+										<!-- COLOR -->
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Colour</button>
+											<div class="spollers__body">
+												<div class="options">
+													<div class="options__item">
+														<input id="black" class="options__input options__input_colors filter-element" type="radio" value="Black" name="colors">
+														<label for="black" class="options__label"><span class="options__text"><img src="img/colors/1.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="grey" class="options__input options__input_colors filter-element" type="radio" value="grey" name="colors">
+														<label for="grey" class="options__label"><span class="options__text"><img src="img/colors/2.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="white" class="options__input options__input_colors filter-element" type="radio" value="white" name="colors">
+														<label for="white" class="options__label"><span class="options__text"><img src="img/colors/3.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="pink" class="options__input options__input_colors filter-element" type="radio" value="pink" name="colors">
+														<label for="pink" class="options__label"><span class="options__text"><img src="img/colors/4.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="red" class="options__input options__input_colors filter-element" type="radio" value="red" name="colors">
+														<label for="red" class="options__label"><span class="options__text"><img src="img/colors/5.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="violet" class="options__input options__input_colors filter-element" type="radio" value="violet" name="colors">
+														<label for="violet" class="options__label"><span class="options__text"><img src="img/colors/6.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="darkBlue" class="options__input options__input_colors filter-element" type="radio" value="dark blue" name="colors">
+														<label for="darkBlue" class="options__label"><span class="options__text"><img src="img/colors/7.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="blue" class="options__input options__input_colors filter-element" type="radio" value="blue" name="colors">
+														<label for="blue" class="options__label"><span class="options__text"><img src="img/colors/8.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="green" class="options__input options__input_colors filter-element" type="radio" value="green" name="colors">
+														<label for="green" class="options__label"><span class="options__text"><img src="img/colors/9.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="yellow" class="options__input options__input_colors filter-element" type="radio" value="yellow" name="colors">
+														<label for="yellow" class="options__label"><span class="options__text"><img src="img/colors/10.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="orange" class="options__input options__input_colors filter-element" type="radio" value="orange" name="colors">
+														<label for="orange" class="options__label"><span class="options__text"><img src="img/colors/11.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="braun" class="options__input options__input_colors filter-element" type="radio" value="braun" name="colors">
+														<label for="braun" class="options__label"><span class="options__text"><img src="img/colors/12.svg" alt="color"></span></label>
+													</div>
+													<div class="options__item">
+														<input id="colorful" class="options__input options__input_colors filter-element" type="radio" value="colorful" name="colors">
+														<label for="colorful" class="options__label"><span class="options__text"><img src="img/colors/13.svg" alt="color"></span></label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End of COLOR -->
+
+									</div>
+									<!-- Spoilers end -->
+								</div>
+							</div>
+							<!-- End of FILTERS -->
+
+						</div><!-- column end -->
+						<!-- End of LEFT COLUMN -->
+
+
+
+						<!-- RIGHT COLUMN -->
+						<div class="catalog__column catalog__column_right">
+							<!-- column -->
+
+							<div class="sorts">
+								<div class="sorts__item">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>View 12 items</option>
+										<option value="2">View 24 items</option>
+										<option value="3">View 36 items</option>
+									</select>
+								</div>
+								<div class="sorts__item">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Filter by</option>
+										<option value="2">Price</option>
+										<option value="3">ENGINE SIZE</option>
+
+									</select>
+								</div>
+							</div>
+
+
+							<div class="cars-cards">
+
+								<div class="cars-cards__cell">
+									<a href="car-page.html">
+										<div data-watch-threshold="0.33" data-watch class="card anim-card">
+											<div class="card__price">
+												FROM 50$
+											</div>
+											<div class="card__top-line">
+												<div class="card__tag">NEW</div>
+												<div class="card__title">
+													Renault Sandero
+												</div>
+											</div>
+											<img src="img/cars/renault.jpg" alt="Renault Sandero" class="card__image">
+											<div class="card__features">
+												<div class="card__feature">
+													<img src="img/icons/transmission.svg" alt="transmission">
+													<span>Manual</span>
+												</div>
+												<div class="card__feature">
+													<img src="img/icons/petrol.svg" alt="petrol">
+													<span>1.2 Liter, Petrol</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="cars-cards__cell">
+									<a href="car-page.html">
+										<div data-watch-threshold="0.33" data-watch class="card anim-card">
+											<div class="card__price">
+												FROM 55$
+											</div>
+											<div class="card__top-line">
+												<div class="card__tag">NEW</div>
+												<div class="card__title">
+													Mitsubishi Space Star
+												</div>
+											</div>
+											<img src="img/cars/mitsubishi.jpg" alt="Mitsubishi Space Star" class="card__image">
+											<div class="card__features">
+												<div class="card__feature">
+													<img src="img/icons/transmission.svg" alt="transmission">
+													<span>Manual</span>
+												</div>
+												<div class="card__feature">
+													<img src="img/icons/petrol.svg" alt="petrol">
+													<span>1.2 Liter, Petrol</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="cars-cards__cell">
+									<a href="car-page.html">
+										<div data-watch-threshold="0.33" data-watch class="card anim-card">
+											<div class="card__price">
+												FROM 50$
+											</div>
+											<div class="card__top-line">
+												<div class="card__title">
+													Opel Corsa
+												</div>
+											</div>
+											<img src="img/cars/opel.jpg" alt="Opel Corsa" class="card__image">
+											<div class="card__features">
+												<div class="card__feature">
+													<img src="img/icons/transmission.svg" alt="transmission">
+													<span>Manual</span>
+												</div>
+												<div class="card__feature">
+													<img src="img/icons/petrol.svg" alt="petrol">
+													<span>1.2 Liter, Petrol</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="cars-cards__cell">
+									<a href="car-page.html">
+										<div data-watch-threshold="0.33" data-watch class="card anim-card">
+											<div class="card__price">
+												FROM 50$
+											</div>
+											<div class="card__top-line">
+												<div class="card__title">
+													Nissan Versa
+												</div>
+											</div>
+											<img src="img/cars/nissan.jpg" alt="Nissan Versa" class="card__image">
+											<div class="card__features">
+												<div class="card__feature">
+													<img src="img/icons/transmission.svg" alt="transmission">
+													<span>Manual</span>
+												</div>
+												<div class="card__feature">
+													<img src="img/icons/petrol.svg" alt="petrol">
+													<span>1.2 Liter, Petrol</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="cars-cards__cell">
+									<a href="car-page.html">
+										<div data-watch-threshold="0.33" data-watch class="card anim-card">
+											<div class="card__price">
+												FROM 50$
+											</div>
+											<div class="card__top-line">
+												<div class="card__tag">HOT</div>
+												<div class="card__title">
+													Hyundai Accent
+												</div>
+											</div>
+											<img src="img/cars/hundai.jpg" alt="Hyundai Accent" class="card__image">
+											<div class="card__features">
+												<div class="card__feature">
+													<img src="img/icons/transmission.svg" alt="transmission">
+													<span>Manual</span>
+												</div>
+												<div class="card__feature">
+													<img src="img/icons/petrol.svg" alt="petrol">
+													<span>1.2 Liter, Petrol</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="cars-cards__cell">
+									<a href="car-page.html">
+										<div data-watch-threshold="0.33" data-watch class="card anim-card">
+											<div class="card__price">
+												FROM 75$
+											</div>
+											<div class="card__top-line">
+												<div class="card__tag">NEW</div>
+												<div class="card__title">
+													Ford Focus
+												</div>
+											</div>
+											<img src="img/cars/ford-black.jpg" alt="Ford Focus" class="card__image">
+											<div class="card__features">
+												<div class="card__feature">
+													<img src="img/icons/transmission.svg" alt="transmission">
+													<span>Manual</span>
+												</div>
+												<div class="card__feature">
+													<img src="img/icons/petrol.svg" alt="petrol">
+													<span>1.2 Liter, Petrol</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+
+
+							<div class="pagination">
+								<a href="#">
+									<div class="pagination__button pagination__button_left no-active">
+									</div>
+								</a>
+
+								<div class="pagination__numbers">
+									<span class="no-active"><a href="#">1</a></span>
+									<span><a href="#">2</a></span>
+									<span><a href="#">3</a></span>
+									<span><a href="#">4</a></span>
+									<span><a href="#">5</a></span>
+									<span><a href="#">6</a></span>
+									<span><a href="#">7</a></span>
+									<span><a href="#">8</a></span>
+									<span><a href="#">9</a></span>
+								</div>
+
+
+								<a href="#">
+									<div class="pagination__button pagination__button_right">
+									</div>
+								</a>
+							</div>
+
+						</div><!-- column end -->
+						<!-- End of RIGHT COLUMN -->
+
+
+					</div><!-- row end -->
+				</div>
+			</section>
+			<!-- End of SECTION CATALOG -->
+
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="/index.html" class="footer__logo">
+					<img src="img/logo-mobile.svg" alt="logo">
+				</a>
+				<div class="footer__row">
+					<div class="footer__column info-footer">
+						<div class="info-footer__form">
+							<h3 class="footer__title">Get latest updates and offers</h3>
+							<form name="footer-form" class="footer-form" action="#" method="post">
+								<div class="footer-form__input">
+									<input data-required="email" autocomplete="off" type="text" name="footer-form-input" data-error="Email is not correct" placeholder="Email" class="input">
+									<button type="submit" class="button">Subscribe</button>
+								</div>
+							</form>
+						</div>
+						<div class="info-footer__social">
+							<h3 class="footer__title">Follow us</h3>
+							<div class="info-footer__social-links">
+								<a href="#"><img src="img/icons/facebook.svg" alt="facebook"></a>
+								<a href="#"><img src="img/icons/insatgam.svg" alt="insatgam"></a>
+								<a href="#"><img src="img/icons/twitter.svg" alt="twitter"></a>
+							</div>
+						</div>
+						<div class="info-footer__copyright">
+							<a href="#">Privacy Police</a>
+							<a href="#">&#169;2022. Garage. All Right Reserved</a>
+						</div>
+					</div>
+					<div class="footer__column links-footer">
+						<div class="links-footer__row">
+							<div class="links-footer__col">
+								<h3 class="footer__title">Quick links</h3>
+								<div class="links-footer__lists">
+									<ul>
+										<li>
+											<a href="catalog.html">Cars</a>
+										</li>
+										<li>
+											<a href="about-us.html">About us</a>
+										</li>
+										<li>
+											<a href="faq.html">FAQ</a>
+										</li>
+										<li>
+											<a href="#">Newslatter</a>
+										</li>
+										<li>
+											<a href="contacts.html">Contacts</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="links-footer__col">
+								<h3 class="footer__title">Car park</h3>
+								<div class="links-footer__lists">
+									<ul>
+										<li>
+											<a href="">Micro</a>
+										</li>
+										<li>
+											<a href="">Sedan</a>
+										</li>
+										<li>
+											<a href="">Cuv</a>
+										</li>
+										<li>
+											<a href="">Suv</a>
+										</li>
+										<li>
+											<a href="">Hatchback</a>
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<a href="">Roadster</a>
+										</li>
+										<li>
+											<a href="">Pickup</a>
+										</li>
+										<li>
+											<a href="">Couple</a>
+										</li>
+										<li>
+											<a href="">Cabriolet</a>
+										</li>
+										<li>
+											<a href="">Minivan</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<section id="rent-now" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="close">
+				</button>
+
+				<h2>car rental and registration in 10 minutes</h2>
+
+				<form name="rent-form" class="rent-form" action="#" method="post">
+					<!-- Places in form -->
+					<div class="rent-form__item rent-form__item_input">
+						<input autocomplete="off" type="text" name="popup-input-delivery" data-error="Please write a place of delivery" placeholder="City and place of delivery" class="input">
+						<img src="img/icons/map.svg" alt="place">
+					</div>
+					<div class="rent-form__item rent-form__item_input">
+						<input autocomplete="off" type="text" name="popup-input-return" data-error="Please write a place of return" placeholder="City and place of return" class="input">
+						<img src="img/icons/map.svg" alt="place">
+					</div>
+					<!-- End of Places in form -->
+
+					<!-- Rental Period in form -->
+					<label class="rent-form__label">Rental period (from-to)</label>
+					<div class="rent-form__date">
+						<div class="rent-form__item rent-form__item_input">
+							<input data-datepicker-start autocomplete="off" type="text" name="rent-form-from" data-error="Error" placeholder="mm/dd/yyyy" class="input start">
+							<img src="img/icons/calendar.svg" alt="date">
+						</div>
+						<div class="rent-form__item rent-form__item_input">
+							<input data-datepicker-end autocomplete="off" type="text" name="rent-form-to" data-error="Error" placeholder="mm/dd/yyyy" class="input end">
+							<img src="img/icons/calendar.svg" alt="date">
+						</div>
+					</div>
+					<!-- End of Rental Period in form -->
+
+					<button type="submit" class="buttons__button buttons__button_blue">Book</button>
+				</form>
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+	<section id="thank-you" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="close">
+				</button>
+
+				<img src="img/icons/double-check.svg" alt="done">
+
+				<h2>your application has been successfully sent!</h2>
+
+				<p>Our manager will contact you to confirm the car rental</p>
+
+			</div>
+		</div>
+	</section>
+	<script src="js/app.min.js?_v=20221116221556"></script>
+</body>
+
+</html>
